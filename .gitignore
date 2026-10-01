@@ -3,12 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Temporary archives & raw 3D assets
+# Heavy raw datasets & columnar stores (Not pushed to git)
+data/
+*.parquet
 *.zip
 airplane_model/
 earth_model/
 
-# Large raw screen recording (Optimized GIF is tracked in assets/)
+# Large raw screen recording (Optimized walkthrough GIF is tracked in assets/)
 *.mp4
 
 # Editor & System Files
