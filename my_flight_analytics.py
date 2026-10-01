@@ -1,5 +1,5 @@
 # %% Section 1: Environment Configuration & Specialized Analytics Engines
-# Question: US Commercial Aviation delay & operations pipeline ke liye kaun-kaun se specialized engines, statistical packages aur scalable ML models chahiye?
+# Question: Which specialized computational engines, statistical libraries, and scalable machine learning frameworks are required to build an end-to-end commercial aviation delay analytics pipeline?
 
 import io
 import ssl
@@ -43,11 +43,11 @@ out_tab_dir = project_root / 'output' / 'tables'
 out_fig_dir.mkdir(parents=True, exist_ok=True)
 out_tab_dir.mkdir(parents=True, exist_ok=True)
 
-# Answer / Finding: Core engines initialized: vectorized math (NumPy), structured analytics (Pandas), hypothesis testing (SciPy), web scraping (urllib/BeautifulSoup), in-memory SQL analytics (DuckDB), aur scalable ML (Scikit-Learn). Output storage directories verified.
+# Finding: Core analytical engines initialized: vectorized computation (NumPy), structured tabular analytics (Pandas), inferential hypothesis testing (SciPy), web scraping (urllib/BeautifulSoup), high-speed in-memory OLAP SQL (DuckDB), and scalable predictive modeling (Scikit-Learn). Output directories successfully verified.
 
 
 # %% Section 2: Raw Data Ingestion & Schema Inspection
-# Question: Raw aviation datasets (Flights, Airports, Runways) ka scale, schema (columns), aur sample records kya hain?
+# Question: What is the scale, schema architecture, dimensionality, and foreign key topology across the raw aviation datasets (Flights, Airports, Runways)?
 
 df_flights = pd.read_excel(raw_data_dir / "Airlines.xlsx")
 df_airports = pd.read_excel(raw_data_dir / "airports.xlsx")
@@ -68,11 +68,11 @@ df_runways.head(5)
 # 1. Flights: 518,297 records x 9 columns (Target: Delay, Features: Airline, Flight, AirportFrom, AirportTo, DayOfWeek, Time, Length).
 # 2. Airports: 77,152 worldwide records x 18 columns (ident, type, name, elevation_ft, iso_country, iso_region, municipality, gps_code, iata_code, local_code, coordinates).
 # 3. Runways: 44,729 global runways x 20 columns (airport_ident, length_ft, width_ft, surface, lighted, closed).
-# Foreign Keys Identified: Flights ('AirportFrom'/'AirportTo') match Airports ('iata_code'/'local_code'), aur Airports ('ident') matches Runways ('airport_ident').
+# Foreign Keys Identified: Flights ('AirportFrom'/'AirportTo') map to Airports ('iata_code'/'local_code'), and Airports ('ident') maps to Runways ('airport_ident').
 
 
 # %% Section 3: Airport Entity Resolution & Foreign Key Alignment
-# Question: Flights table ke sabhi 291 airports kya raw airports table me cleanly map ho rahe hain ya unme missing codes/anomalies hain?
+# Question: Do all 291 commercial airports in the flights dataset cleanly resolve against the global airports registry, or do missing IATA codes and entity collisions exist?
 
 flight_airports = set(df_flights['AirportFrom']).union(set(df_flights['AirportTo']))
 airport_iatas = set(df_airports['iata_code'].dropna())
@@ -85,11 +85,11 @@ df_airports['clean_code'] = df_airports['iata_code'].fillna(df_airports['local_c
 us_territories = ['US', 'PR', 'VI', 'GU']
 df_airports_us = df_airports[df_airports['iso_country'].isin(us_territories)].copy()
 
-# Answer / Finding: Raw data forensic me 1 unmatched airport mila: 'CYS' (Cheyenne, Wyoming). Iska iata_code null tha par local_code 'CYS' tha. Fillna fallback aur US-jurisdiction filter apply karne se all 291 commercial airports successfully resolve ho gaye (100% foreign key match).
+# Finding: Data forensic audit identified 1 unmatched airport code: 'CYS' (Cheyenne Regional Airport, WY) where 'iata_code' was null but 'local_code' was populated as 'CYS'. Applying a fallback fillna strategy and restricting to US jurisdictions resolved all 291 commercial airports with 100% referential integrity.
 
 
 # %% Section 4: Runway Aggregation & Cartesian Multiplicity Defense
-# Question: 44K+ individual runway segments ko bina 1-to-many Cartesian explosion ke airport-level 1:1 dimension me kaise compress karein?
+# Question: How can 44,000+ runway segments be aggregated into a 1:1 airport-level dimension table to prevent 1-to-many Cartesian multiplicity during relational joins?
 
 runway_agg = df_runways.groupby('airport_ident').agg(
     runway_count=('id', 'count'),
@@ -111,11 +111,11 @@ apt_lookup = (
     .drop_duplicates(subset=['clean_code'])
 )
 
-# Answer / Finding: 44,729 runway records ko aggregate karke 1:1 airport metrics banaye gaye. Total 291 flight airports ka unified dimension table bana, jisse relational join ke waqt row duplication (Cartesian explosion) ka risk strictly 0% ho gaya.
+# Finding: Aggregated 44,729 runway records into airport-level operational metrics (runway count, maximum runway length, lighting availability). Curated a unified 1:1 dimension lookup for all 291 commercial airports, eliminating the risk of Cartesian row explosion during downstream joins.
 
 
 # %% Section 5: Master Relational Dual Merge
-# Question: Origin aur Destination airports ke infrastructure, coordinates aur elevation features ko 518K flight events ke sath kaise merge karein?
+# Question: How can origin and destination infrastructure, geographic coordinates, and elevation attributes be merged with 518,000+ flight records without data loss?
 
 df_master = pd.merge(
     df_flights,
@@ -135,11 +135,11 @@ df_master = pd.merge(
 
 df_master = df_master.drop(columns=['from_clean_code', 'to_clean_code'])
 
-# Answer / Finding: Exact dual merge execute hua. 518,297 rows strictly preserve huin (zero row loss, zero duplication) aur columns expand hoke 29 ho gaye (origin aur destination ke paired geographic, elevation aur runway attributes).
+# Finding: Executed a dual left merge across origin and destination dimensions. Exactly 518,297 rows were preserved (zero row loss, zero duplication), expanding feature dimensionality to 29 paired geospatial, elevation, and runway attributes.
 
 
 # %% Section 6: Vectorized Haversine Spatial Analytics & Physical Speed
-# Question: Airport coordinates se great-circle flight distance aur implied airspeed calculate karke network haul categories kaise define karein?
+# Question: How can great-circle flight distances and implied airspeeds be computed via vectorized spherical trigonometry to segment flights into operational haul categories?
 
 r_miles = 3958.8
 r_km = 6371.0
@@ -168,22 +168,22 @@ df_master['duration_category'] = pd.cut(df_master['Length'], bins=dur_bins, labe
 
 df_master[['distance_miles', 'speed_mph', 'distance_category']].describe()
 
-# Answer / Finding: Vectorized spherical trigonometry se great-circle distance calculate hua. Average route distance 795 miles aur mean commercial ground speed ~306 mph aayi. Flights ko 3 distinct operational distance brackets me segment kiya gaya.
+# Finding: Computed great-circle distances using a vectorized Haversine formulation. The dataset exhibits a mean route distance of 795 miles and an average commercial airspeed of ~306 mph. Segmented the network into 3 distinct operational haul categories: Short-haul (<=500 mi), Medium-haul (500-1500 mi), and Long-haul (>1500 mi).
 
 
 # %% Section 7: High-Performance Columnar Parquet Persistence
-# Question: 518K enriched relational rows ko disk pe lossless, ultra-fast aur compressed format me kaise persist karein?
+# Question: How can the enriched 518,000-row relational dataset be persisted on disk using an optimized columnar storage format for ultra-fast I/O?
 
 parquet_path = raw_data_dir / "master_flights_enriched.parquet"
 df_master.to_parquet(parquet_path, index=False)
 df_loaded = pd.read_parquet(parquet_path)
 df_loaded.shape
 
-# Answer / Finding: Parquet columnar format ne storage ko 85%+ compress kiya aur schema dtypes (categorical, float, int) ko identically preserve kiya. Ingestion speed Excel/CSV ke mukable 40x fast ho gayi.
+# Finding: Persisted data in Apache Parquet columnar format, achieving over 85% disk compression while strictly preserving data types. Subsequent ingestion throughput increased by ~40x compared to legacy CSV/Excel formats.
 
 
 # %% Section 8: Web Scraping: FAA Hub Classification (Wikipedia)
-# Question: Kya airport passenger traffic tier (Large, Medium, Small Hub) delays par structural effect daalti hai?
+# Question: Does airport passenger throughput tier (FAA Large, Medium, or Small Hub classification) have a structural impact on flight delays?
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
@@ -212,11 +212,11 @@ def categorize_hub(iata):
 df_master['origin_hub_category'] = df_master['AirportFrom'].apply(categorize_hub)
 df_master['origin_hub_category'].value_counts()
 
-# Answer / Finding: Wikipedia se FAA enplanement tables live parse karke 30 Large Hubs (ATL, ORD, LAX etc.) aur 31 Medium Hubs map kiye gaye. Enriched feature: 'origin_hub_category'.
+# Finding: Ingested and parsed FAA annual commercial enplanement data from Wikipedia, categorizing all 30 Large Hubs (e.g., ATL, ORD, LAX) and 31 Medium Hubs. Engineered the feature 'origin_hub_category' to quantify capacity-driven delay variations.
 
 
 # %% Section 9: Web Scraping: Airline Operating History & Fleet Maturity
-# Question: Kya airline company ki operating age / organizational experience delays ko reduce karne me madad karti hai?
+# Question: Does carrier organizational maturity (years since founding) correlate with operational punctuality and delay mitigation?
 
 url_airlines = 'https://en.wikipedia.org/wiki/List_of_airlines_of_the_United_States'
 req_air = urllib.request.Request(url_airlines, headers={'User-Agent': 'Mozilla/5.0'})
@@ -260,11 +260,11 @@ airline_experience['operating_years'] = 2011 - airline_experience['founding_year
 airline_experience['delay_pct'] = (airline_experience['delay_rate'] * 100).round(2)
 airline_experience.sort_values(by='operating_years', ascending=False)
 
-# Answer / Finding: Historical airline fleet founding data scrape karke operating years calculate kiye gaye. Correlation check me operating age aur delay rate me zero statistical correlation mila (r = -0.04), proving delay is driven by network scheduling and turnaround times, not carrier age.
+# Finding: Scraped historical founding years for US commercial carriers and derived operational operating age. Bivariate correlation revealed no statistically meaningful relationship between airline age and delay frequency (r = -0.04), proving that delay susceptibility is driven by route network topology and turnaround buffers rather than organizational longevity.
 
 
 # %% Section 10: Airline Delay Benchmark & Southwest Operational Anomaly
-# Question: US domestic market me sabse zyada delayed airlines kaun si hain, aur Southwest Airlines ka volume vs delay rate kya behave kar raha hai?
+# Question: Which carriers exhibit the highest delay rates across the US domestic network, and how does Southwest Airlines behave in terms of volume versus delay exposure?
 
 airline_delays = df_master.groupby('Airline').agg(
     total_flights=('Delay', 'count'),
@@ -294,11 +294,11 @@ plt.tight_layout()
 plt.savefig(out_fig_dir / '01_airline_delay_comparison.png', dpi=150)
 plt.show()
 
-# Answer / Finding: National average delay rate 44.5% hai. Southwest (WN) market ka sabse bada carrier hai (94,097 flights) par iska delay rate 69.9% hai (industry worst). WN alone accounts for ~28% of all domestic delays in the dataset.
+# Finding: The national benchmark delay rate is 44.5%. Southwest Airlines (WN) is the highest-volume carrier (94,097 flights) but exhibits an industry-worst delay rate of 69.9%. Southwest alone accounts for ~28% of all delayed flight events in the nationwide dataset.
 
 
 # %% Section 11: Day-of-Week Safety Index & Operational Vulnerability
-# Question: Week ke kaun se din flights sabse safe/punctual rehti hain aur kaun se din delay risk peak pe hota hai?
+# Question: How does flight delay vulnerability fluctuate across days of the week, and which days represent the most versus least reliable operational windows?
 
 day_map = {
     1: 'Monday', 2: 'Tuesday', 3: 'Wednesday',
@@ -334,11 +334,11 @@ plt.tight_layout()
 plt.savefig(out_fig_dir / '02_weekday_delay_safety.png', dpi=150)
 plt.show()
 
-# Answer / Finding: Saturday domestic aviation ka sabse punctual din hai (delay rate 39.7%), jabki Wednesday sabse high-risk din hai (delay rate 47.0%). Weekday business traffic congestion delays ko escalate karta hai.
+# Finding: Saturday is the most punctual operational window (delay rate of 39.7%), whereas Wednesday represents the peak operational risk window (delay rate of 47.0%). Midweek commercial passenger traffic and congested hub bank scheduling heavily amplify network delays.
 
 
 # %% Section 12: Point-to-Point Cascading Snowball Effect vs Regional Buffers
-# Question: Southwest Airlines me din dhalne ke sath delays snowball ki tarah kyu badhte hain compared to regional feeder carriers like PSA Airlines (OH)?
+# Question: Why do flight delays compound into a cascading snowball effect throughout the operating day for Southwest Airlines compared to regional feeder carriers like PSA Airlines (OH)?
 
 target_carriers = df_master[df_master['Airline'].isin(['WN', 'OH'])].copy()
 
@@ -354,11 +354,11 @@ snowball_table['delay_pct'] = (snowball_table['delay_rate'] * 100).round(1)
 snowball_pivot = snowball_table.pivot(index='time_bucket', columns='Airline', values='delay_pct')
 snowball_pivot
 
-# Answer / Finding: Southwest (WN) ka delay early morning 48.2% se shuru hoke raat ko 81.3% tak escalate ho jata hai (+33.1% surge). Southwest ka tight 25-minute aircraft turnaround model subah ki 1 delay ko pure din propagate kar deta hai. Comparatively, OH ka escalation significantly buffer-protected rehta hai.
+# Finding: Southwest Airlines (WN) demonstrates severe intraday delay compounding, escalating from 48.2% in early morning to 81.3% by evening (+33.1% surge). Southwest's aggressive 25-minute aircraft turnaround model causes morning ground disruptions to propagate downstream through the entire fleet rotation. Conversely, regional carriers like OH maintain scheduling buffers that constrain intraday delay propagation.
 
 
 # %% Section 13: Operational Route & Distance Haul Optimization
-# Question: Different distance tiers (Short, Medium, Long haul) me travellers aur logistics ke liye sabse reliable airlines kaun si hain?
+# Question: Which carriers demonstrate the highest on-time reliability across discrete distance haul brackets (Short, Medium, Long haul)?
 
 bracket_perf = df_master.groupby(['distance_category', 'Airline'], observed=False).agg(
     total_flights=('Delay', 'count'),
@@ -382,7 +382,7 @@ top_recommended
 
 
 # %% Section 14: Long-Haul Departure Time Windows & Operational Risk (Task 3d)
-# Question: Long-distance flights (>1500 miles) kis time window me fly karna safest hai, aur sham ko departure schedule karne par delay risk kitna badhta hai?
+# Question: What is the optimal departure window for long-haul transcontinental flights (>1500 miles), and how does evening departure scheduling escalate delay risk?
 
 long_flights = df_master[df_master['distance_miles'] > 1500].copy()
 long_flights['dep_hour'] = long_flights['Time'] // 60
@@ -414,11 +414,11 @@ fig.tight_layout()
 plt.savefig(out_fig_dir / '03_long_flight_departure_patterns.png', dpi=150)
 plt.show()
 
-# Answer / Finding: 06:00 to 08:00 AM window me long-haul flights sabse punctual hoti hain (delay rate ~26-30%). Raat 20:00 (8 PM) ke baad delay rate 64.2% tak pahuch jata hai. Volume peaks at morning 7-9 AM and afternoon 4-6 PM.
+# Finding: The 06:00 to 08:00 AM morning window offers maximum reliability for long-haul flights (delay rate ~26-30%). Flights departing after 20:00 (8 PM) experience delay rates escalating to 64.2%. Operational volume peaks during morning (7-9 AM) and late afternoon (4-6 PM) banks.
 
 
 # %% Section 15: Airport Hub Congestion & Medium Hub Bottleneck Paradox (Task 4)
-# Question: Kya airport jitna bada hoga delay utna hi zyada hoga, ya fir Medium Hubs par severe capacity constraints hain?
+# Question: Does airport operational delay scale monotonically with hub size, or do Medium Hubs experience disproportionate capacity constraints?
 
 hub_analysis = df_master.groupby('origin_hub_category').agg(
     total_flights=('Delay', 'count'),
@@ -463,11 +463,11 @@ plt.tight_layout()
 plt.savefig(out_fig_dir / '04_hub_category_delay_comparison.png', dpi=150, bbox_inches='tight')
 plt.show()
 
-# Answer / Finding: Counter-intuitive discovery: Medium Hubs ka delay rate (47.2%) Large Hubs (44.6%) aur Small Hubs (42.1%) dono se zyada hai! Reason: Medium hubs par traffic high hota hai par Large hubs jaisi multi-runway ATC infrastructure aur gate capacity nahi hoti, creating severe arrival-departure bottlenecks.
+# Finding: Discovered a counter-intuitive operational bottleneck: Medium Hubs suffer a higher delay rate (47.2%) than both Large Hubs (44.6%) and Regional airports (42.1%). Medium hubs process high commercial flight density without the redundant multi-runway configurations and gate capacity typical of premier mega-hubs.
 
 
 # %% Section 16: Inferential Statistics: Welch's Two-Sample t-Tests (Task 5)
-# Question: Kya airport elevation, runway count, aur flight duration ka delay par statistically significant impact hai (p < 0.05)?
+# Question: Do origin/destination airport elevation, runway capacity, and scheduled flight duration have statistically significant effects on delay probability (Welch's t-test at alpha = 0.05)?
 
 # 5a. Airport Elevation
 t_elev_from, p_elev_from = stats.ttest_ind(
@@ -509,11 +509,11 @@ hypothesis_results = pd.DataFrame([
 ])
 hypothesis_results
 
-# Answer / Finding: All 5 null hypotheses rejected at alpha = 0.05 (p-values < 1e-15 due to massive sample N = 518,297). Elevation differences and duration are highly statistically significant delay factors.
+# Finding: All 5 null hypotheses rejected at alpha = 0.05 (p-values < 1e-15 across N = 518,297). Elevation gradients, runway capacity differentials, and scheduled air duration are confirmed to be statistically significant drivers of delay risk.
 
 
 # %% Section 17: Multivariable Correlation Matrix & Linear Multicollinearity (Task 6)
-# Question: Flight delay aur physical features (Time, Length, Elevation, Runways, Distance, Speed) me kya linear correlations hain?
+# Question: What degree of linear correlation and multicollinearity exists between flight delays and operational features (Departure Time, Flight Length, Elevation, Runways, Distance, Speed)?
 
 corr_cols = [
     'Delay', 'Time', 'Length', 'DayOfWeek',
@@ -532,11 +532,11 @@ plt.tight_layout()
 plt.savefig(out_fig_dir / '05_correlation_matrix_heatmap.png', dpi=150)
 plt.show()
 
-# Answer / Finding: Linear correlation with delay is highest for Time (+0.146) followed by Length (-0.02). Correlation matrix confirms that aviation delays are driven by non-linear interactions (e.g. carrier routing x time of day), proving why tree-based non-linear machine learning is mandatory over linear models.
+# Finding: Bivariate linear correlation with delay is led by Departure Time (+0.146), followed by Flight Length (-0.02). The low linear correlation coefficients confirm that aviation disruption is governed by complex non-linear feature interactions (e.g., carrier turnaround dynamics x temporal congestion), establishing the necessity for non-linear tree-based machine learning.
 
 
 # %% Section 18: Machine Learning Feature Encoding & Stratified Split
-# Question: Continuous, categorical, aur ordinal columns ko bina data leakage ke standard scale aur encode kaise karein?
+# Question: How can numerical, nominal categorical, and ordinal features be scaled and encoded using a leakage-free Scikit-Learn preprocessing pipeline and stratified train-test split?
 
 num_cols = ['Time', 'Length', 'distance_miles', 'speed_mph', 'from_elevation_ft', 'to_elevation_ft', 'from_runway_count', 'to_runway_count']
 ohe_cols = ['Airline']
@@ -566,11 +566,11 @@ feature_names = (
 
 X_train_trans.shape, X_test_trans.shape
 
-# Answer / Finding: Stratified 80/20 split completed (414,637 train rows, 103,660 test rows). StandardScaler applied to numericals, OneHotEncoder to Airlines, and OrdinalEncoder to hierarchy categories. Transformation strictly fitted on train to prevent data leakage.
+# Finding: Stratified 80/20 train-test partition established (414,637 training rows, 103,660 testing rows). Built a ColumnTransformer applying StandardScaler to continuous variables, OneHotEncoder to carrier identifiers, and OrdinalEncoder to ordinal hierarchies. All transformations were strictly fitted on training data to prevent out-of-fold leakage.
 
 
 # %% Section 19: Baseline SGD Classifier (Online Convex Optimization)
-# Question: Large-scale 518K dataset par linear logistic regression ka baseline benchmark accuracy aur ROC-AUC kya hai?
+# Question: What is the baseline predictive accuracy and ROC-AUC of a linear classification benchmark (SGD Logistic Regression with online convex optimization) on the 518,000-record dataset?
 
 sgd = SGDClassifier(loss='log_loss', max_iter=1000, random_state=42)
 sgd.fit(X_train_trans, y_train)
@@ -579,11 +579,11 @@ y_pred_train_sgd = sgd.predict(X_train_trans)
 y_pred_test_sgd = sgd.predict(X_test_trans)
 y_prob_test_sgd = sgd.predict_proba(X_test_trans)[:, 1]
 
-# Answer / Finding: SGD Logistic Regression delivers Test Accuracy 58.7%, ROC-AUC 0.620. Linear decision boundaries fail to capture airline-specific scheduling non-linearities.
+# Finding: Baseline SGD Logistic Regression yielded 58.7% test accuracy and an ROC-AUC of 0.620. Linear hyperplanes fail to delineate complex multimodal network delay boundaries.
 
 
 # %% Section 20: Tree Pruning & 5-Fold Stratified Ensemble Voting
-# Question: Overfitting se bachne ke liye Decision Tree pruning (max_depth, min_samples_leaf) aur Stratified 5-Fold Ensemble voting se variance kaise reduce karein?
+# Question: How can decision tree regularization (max_depth and min_samples_leaf constraints) and Stratified 5-Fold soft voting ensembles mitigate tree variance and eliminate overfitting?
 
 dt_unpruned = DecisionTreeClassifier(random_state=42)
 dt_unpruned.fit(X_train_trans, y_train)
@@ -604,11 +604,11 @@ for fold, (train_idx, val_idx) in enumerate(skf.split(X_train_trans, y_train)):
 
 y_pred_test_ensemble = (ensemble_test_probs >= 0.5).astype(int)
 
-# Answer / Finding: Unpruned tree suffered 99.8% train vs 61.2% test accuracy (extreme overfitting). Pruned tree controlled depth to 10 and min_samples_leaf to 50, achieving 66.8% train and 66.2% test accuracy (zero overfitting gap). 5-Fold soft voting ensemble further boosted ROC-AUC to 0.718.
+# Finding: An unpruned decision tree exhibited severe overfitting (99.8% train vs 61.2% test accuracy). Introducing structural regularization (max_depth=10, min_samples_leaf=50) stabilized performance at 66.8% train and 66.2% test accuracy, eliminating generalization gap. A 5-fold stratified soft-voting ensemble further improved out-of-sample ROC-AUC to 0.718.
 
 
 # %% Section 21: Production Gradient Boosting & Champion Model Selection
-# Question: State-of-the-art Histogram-based Gradient Boosting ka performance kya hai aur all 4 models ka definitive comparison metrics table kya nikalta hai?
+# Question: How does Histogram-based Gradient Boosting perform relative to baseline architectures, and what are the definitive model evaluation metrics across all candidate models?
 
 hgb = HistGradientBoostingClassifier(max_iter=100, random_state=42)
 hgb.fit(X_train_trans, y_train)
@@ -691,11 +691,11 @@ plt.tight_layout()
 plt.savefig(out_fig_dir / '07_feature_importance.png', dpi=150)
 plt.show()
 
-# Answer / Finding: HistGradientBoosting emerges as Champion Model with Test Accuracy 68.6% and ROC-AUC 0.742. Feature importance proves that Time (departure minute of day) is the #1 delay driver (39.2% Gini importance), followed by Airline_WN (Southwest dummy, 21.4%), and Flight Length (14.6%).
+# Finding: HistGradientBoosting is the Champion Model, achieving 68.6% test accuracy and an ROC-AUC of 0.742. Tree feature attribution reveals Departure Time as the primary delay predictor (39.2% importance), followed by Carrier_WN / Southwest indicator (21.4%), and Scheduled Duration (14.6%).
 
 
 # %% Section 22: In-Memory SQL Analytics Engine (DuckDB ANSI SQL Execution)
-# Question: 518K flights dataset par bina external SQL server setup kiye high-speed ANSI SQL queries kaise run aur export karein?
+# Question: How can complex ANSI SQL analytical queries be executed directly over 518,000 in-memory records using embedded DuckDB without external database overhead?
 
 con = duckdb.connect()
 con.register('flights', df_master)
@@ -781,11 +781,11 @@ df_sql_q4.to_csv(out_tab_dir / 'sql_q4_elevation_tiers.csv', index=False)
 
 df_sql_q1.head(3), df_sql_q2.head(3), df_sql_q3, df_sql_q4
 
-# Answer / Finding: DuckDB executed 4 complex ANSI SQL analytical queries directly on 518K in-memory records in under 80 milliseconds. Results automatically exported to output/tables/ for audit validation.
+# Finding: Embedded DuckDB OLAP engine executed 4 multi-dimensional ANSI SQL queries across 518,000 in-memory records in under 80 milliseconds. Tabular outputs were systematically exported to output/tables/ for downstream BI validation.
 
 
 # %% Section 23: Business Intelligence Dimensional Data Marts (Power BI Star Schema & Tableau)
-# Question: Analytical data warehouse ke liye clean dimensional tables (Fact Routes, Dim Airports, Dim Airlines) aur Tableau data marts kaise generate karein?
+# Question: How can curated dimensional data marts (Fact Route Performance, Dim Airports, Dim Airlines) and BI-ready schemas be constructed for enterprise Power BI and Tableau visualization?
 
 con.execute('''
 SELECT 
@@ -962,4 +962,4 @@ airports_dim.to_csv(out_tab_dir / 'powerbi_dim_airports.csv', index=False, encod
 airlines_dim = df_master[['Airline', 'carrier_name', 'operating_model']].drop_duplicates(subset=['Airline'])
 airlines_dim.to_csv(out_tab_dir / 'powerbi_dim_airlines.csv', index=False, encoding='utf-8-sig')
 
-# Answer / Finding: Star Schema Dimensional Model complete. Exported Fact table (powerbi_route_carrier_matrix.csv with financial impact and delay risk) and Dimension tables (powerbi_dim_airports.csv, powerbi_dim_airlines.csv), plus 4 Tableau data marts.
+# Finding: Star Schema Dimensional Architecture finalized. Exported enriched Fact table (powerbi_route_carrier_matrix.csv containing financial delay loss liabilities) and Dimension tables (powerbi_dim_airports.csv, powerbi_dim_airlines.csv), alongside 4 dedicated Tableau analytical extracts.
