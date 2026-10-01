@@ -1,0 +1,8 @@
+DayOfWeek,DayName,total_flights,delayed_flights,delay_pct
+1,Monday,70008,33059.0,47.22
+2,Tuesday,68721,31072.0,45.21
+3,Wednesday,86478,41144.0,47.58
+4,Thursday,87988,40280.0,45.78
+5,Friday,81797,34813.0,42.56
+6,Saturday,56354,22860.0,40.56
+7,Sunday,67210,30761.0,45.77

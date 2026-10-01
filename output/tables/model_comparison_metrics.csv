@@ -1,0 +1,5 @@
+Model,Train Acc,Test Acc,Precision,Recall,F1-Score,ROC-AUC
+SGD Logistic Regression,0.6324,0.6295,0.6126,0.4868,0.5425,0.6748
+Pruned Decision Tree,0.6528,0.6481,0.6644,0.4449,0.5329,0.6874
+5-Fold Ensemble DT (Voting),,0.6508,0.6849,0.4189,0.5198,0.6938
+HistGradientBoosting,0.6619,0.6576,0.6686,0.4781,0.5575,0.7081

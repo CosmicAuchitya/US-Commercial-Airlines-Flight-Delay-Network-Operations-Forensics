@@ -1,0 +1,5 @@
+source_elevation_tier,destination_elevation_tier,total_flights,delayed_flights,delay_pct
+Above Avg Elevation,Above Avg Elevation,47856,21265.0,44.44
+Above Avg Elevation,Below Avg Elevation,90501,40857.0,45.15
+Below Avg Elevation,Above Avg Elevation,90493,42448.0,46.91
+Below Avg Elevation,Below Avg Elevation,289706,129419.0,44.67

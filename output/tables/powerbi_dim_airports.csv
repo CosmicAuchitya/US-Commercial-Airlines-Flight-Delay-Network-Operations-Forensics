@@ -1,0 +1,292 @@
+﻿airport_code,airport_name,airport_type,elevation_ft,runway_count,latitude_deg,longitude_deg,iso_region,municipality,climate_tier
+SFO,San Francisco International Airport,large_airport,13.0,4,37.6189994812011,-122.375,US-CA,San Francisco,Coastal Marine / Fog Belt
+PHX,Phoenix Sky Harbor International Airport,large_airport,1135.0,3,33.435302,-112.005905,US-AZ,Phoenix,Southern / Subtropical
+LAX,Los Angeles International Airport,large_airport,125.0,4,33.942501,-118.407997,US-CA,Los Angeles,Southern / Subtropical
+ANC,Ted Stevens Anchorage International Airport,large_airport,152.0,3,61.1744,-149.996002,US-AK,Anchorage,Northern Continental / Winter Belt
+LAS,Harry Reid International Airport,large_airport,2181.0,4,36.083361,-115.151817,US-NV,Las Vegas,High Alpine / Mountain
+SLC,Salt Lake City International Airport,large_airport,4227.0,4,40.785749,-111.979746,US-UT,Salt Lake City,High Alpine / Mountain
+DEN,Denver International Airport,large_airport,5431.0,6,39.861698150635,-104.672996521,US-CO,Denver,High Alpine / Mountain
+ONT,Ontario International Airport,large_airport,944.0,2,34.0559997558593,-117.600997924804,US-CA,Ontario,Southern / Subtropical
+FAI,Fairbanks International Airport,large_airport,439.0,4,64.81510162,-147.8560028,US-AK,Fairbanks,Northern Continental / Winter Belt
+BQN,Rafael Hern√°ndez International Airport,medium_airport,237.0,1,18.4949,-67.129402,PR-U-A,Aguadilla,Southern / Subtropical
+PSE,Mercedita Airport,medium_airport,29.0,1,18.00830078125,-66.563003540039,PR-U-A,Ponce,Southern / Subtropical
+HNL,Daniel K Inouye International Airport,large_airport,13.0,6,21.32062,-157.924228,US-HI,Honolulu,Tropical / Island
+BIS,Bismarck Municipal Airport,medium_airport,1661.0,2,46.7727012634277,-100.746002197265,US-ND,Bismarck,Northern Continental / Winter Belt
+IYK,Inyokern Airport,small_airport,2457.0,3,35.65879822,-117.8300018,US-CA,Inyokern,High Alpine / Mountain
+EWR,Newark Liberty International Airport,large_airport,18.0,3,40.692501,-74.168701,US-NJ,Newark,Northern Continental / Winter Belt
+BOS,Logan International Airport,large_airport,20.0,6,42.3643,-71.005203,US-MA,Boston,Coastal Marine / Fog Belt
+MKE,General Mitchell International Airport,large_airport,723.0,5,42.9472007751464,-87.8965988159179,US-WI,Milwaukee,Northern Continental / Winter Belt
+GFK,Grand Forks International Airport,medium_airport,845.0,4,47.949299,-97.176102,US-ND,Grand Forks,Northern Continental / Winter Belt
+OMA,Eppley Airfield,medium_airport,984.0,3,41.3032,-95.894096,US-NE,Omaha,Northern Continental / Winter Belt
+GSO,Piedmont Triad International Airport,medium_airport,925.0,3,36.097801,-79.937302,US-NC,Greensboro,Southern / Subtropical
+LMT,Crater Lake-Klamath Regional Airport,medium_airport,4095.0,3,42.156101,-121.733002,US-OR,Klamath Falls,High Alpine / Mountain
+SEA,Seattle-Tacoma International Airport,large_airport,433.0,4,47.449162,-122.311134,US-WA,Seattle,Coastal Marine / Fog Belt
+MCO,Orlando International Airport,large_airport,96.0,4,28.4293994903564,-81.3089981079101,US-FL,Orlando,Southern / Subtropical
+TPA,Tampa International Airport,large_airport,26.0,3,27.9755001068115,-82.533203125,US-FL,Tampa,Southern / Subtropical
+DLH,Duluth International Airport,medium_airport,1428.0,2,46.842098,-92.193604,US-MN,Duluth,Northern Continental / Winter Belt
+MSP,Minneapolis-Saint Paul International Airport / Wold-Chamberlain Field,large_airport,841.0,4,44.882,-93.221802,US-MN,Minneapolis,Northern Continental / Winter Belt
+FAR,Hector International Airport,medium_airport,902.0,3,46.9207000732421,-96.815803527832,US-ND,Fargo,Northern Continental / Winter Belt
+MFE,McAllen Miller International Airport,medium_airport,107.0,2,26.176141,-98.237965,US-TX,McAllen,Southern / Subtropical
+MSY,Louis Armstrong New Orleans International Airport,large_airport,4.0,3,29.9934005737304,-90.2580032348632,US-LA,New Orleans,Southern / Subtropical
+VPS,Destin-Fort Walton Beach Airport,medium_airport,87.0,2,30.4832,-86.525398,US-FL,Valparaiso,Southern / Subtropical
+BWI,Baltimore/Washington International Thurgood Marshall Airport,large_airport,146.0,4,39.1754,-76.668297,US-MD,Baltimore,Southern / Subtropical
+MAF,Midland International Air and Space Port,medium_airport,2871.0,4,31.942499,-102.202003,US-TX,Midland,High Alpine / Mountain
+LWS,Lewiston Nez Perce County Airport,medium_airport,1442.0,2,46.3745002746582,-117.014999389648,US-ID,Lewiston,Northern Continental / Winter Belt
+RST,Rochester International Airport,medium_airport,1317.0,2,43.908298,-92.5,US-MN,Rochester,Northern Continental / Winter Belt
+ALB,Albany International Airport,medium_airport,285.0,2,42.7482986450195,-73.8016967773437,US-NY,Albany,Northern Continental / Winter Belt
+DSM,Des Moines International Airport,medium_airport,958.0,2,41.534,-93.663101,US-IA,Des Moines,Northern Continental / Winter Belt
+CHS,Charleston International Airport,medium_airport,46.0,2,32.898602,-80.040497,US-SC,Charleston,Southern / Subtropical
+MSN,Dane County Regional Truax Field,medium_airport,887.0,3,43.1399,-89.337502,US-WI,Madison,Northern Continental / Winter Belt
+JAX,Jacksonville International Airport,large_airport,30.0,2,30.4941005706787,-81.6878967285156,US-FL,Jacksonville,Southern / Subtropical
+SAT,San Antonio International Airport,large_airport,809.0,3,29.533701,-98.469803,US-TX,San Antonio,Southern / Subtropical
+PNS,Pensacola International Airport,medium_airport,121.0,2,30.4734,-87.1866,US-FL,Pensacola,Southern / Subtropical
+BHM,Birmingham-Shuttlesworth International Airport,medium_airport,650.0,2,33.562901,-86.753502,US-AL,Birmingham,Southern / Subtropical
+LIT,Bill & Hillary Clinton National Airport/Adams Field,medium_airport,262.0,3,34.729582,-92.223728,US-AR,Little Rock,Southern / Subtropical
+SAV,Savannah Hilton Head International Airport,large_airport,50.0,2,32.12760162,-81.20210266,US-GA,Savannah,Southern / Subtropical
+BNA,Nashville International Airport,large_airport,599.0,4,36.1245002746582,-86.6781997680664,US-TN,Nashville,Southern / Subtropical
+ICT,Wichita Eisenhower National Airport,medium_airport,1333.0,3,37.649899,-97.433098,US-KS,Wichita,Southern / Subtropical
+ECP,Northwest Florida Beaches International Airport,medium_airport,69.0,1,30.357106,-85.795414,US-FL,Panama City Beach,Southern / Subtropical
+DHN,Dothan Regional Airport,medium_airport,401.0,2,31.3213005065917,-85.4496002197265,US-AL,Dothan,Southern / Subtropical
+MGM,Montgomery Regional (Dannelly Field) Airport,medium_airport,221.0,2,32.300598,-86.393997,US-AL,Montgomery,Southern / Subtropical
+CAE,Columbia Metropolitan Airport,medium_airport,236.0,2,33.938801,-81.119499,US-SC,Columbia,Southern / Subtropical
+PWM,Portland International Jetport,large_airport,76.0,2,43.646198,-70.309303,US-ME,Portland,Northern Continental / Winter Belt
+ACV,California Redwood Coast-Humboldt County Airport,medium_airport,221.0,2,40.978101,-124.109,US-CA,Arcata/Eureka,Northern Continental / Winter Belt
+EKO,Elko Regional Airport,medium_airport,5140.0,2,40.8249015808105,-115.791999816894,US-NV,Elko,High Alpine / Mountain
+PHL,Philadelphia International Airport,large_airport,36.0,4,39.871898651123,-75.241096496582,US-PA,Philadelphia,Southern / Subtropical
+ATL,Hartsfield Jackson Atlanta International Airport,large_airport,1026.0,5,33.6367,-84.428101,US-GA,Atlanta,Southern / Subtropical
+PDX,Portland International Airport,large_airport,31.0,3,45.58869934,-122.5979996,US-OR,Portland,Coastal Marine / Fog Belt
+RIC,Richmond International Airport,large_airport,167.0,3,37.505199432373,-77.3197021484375,US-VA,Richmond,Southern / Subtropical
+BTR,Baton Rouge Metropolitan Airport,medium_airport,70.0,3,30.533199,-91.149597,US-LA,Baton Rouge,Southern / Subtropical
+HRL,Valley International Airport,medium_airport,36.0,3,26.2285003662109,-97.6544036865234,US-TX,Harlingen,Southern / Subtropical
+MYR,Myrtle Beach International Airport,medium_airport,25.0,1,33.6796989441,-78.9282989502,US-SC,Myrtle Beach,Southern / Subtropical
+TUS,Tucson International Airport / Morris Air National Guard Base,medium_airport,2643.0,3,32.115004,-110.938053,US-AZ,Tucson,High Alpine / Mountain
+SBN,South Bend Regional Airport,medium_airport,799.0,3,41.708698,-86.317299,US-IN,South Bend,Northern Continental / Winter Belt
+CAK,Akron Canton Regional Airport,medium_airport,1228.0,3,40.9160995483398,-81.4421997070312,US-OH,Akron,Northern Continental / Winter Belt
+TVC,Cherry Capital Airport,medium_airport,624.0,3,44.7414016723632,-85.5821990966796,US-MI,Traverse City,Northern Continental / Winter Belt
+CLE,Cleveland Hopkins International Airport,large_airport,791.0,4,41.4117012024,-81.8498001099,US-OH,Cleveland,Northern Continental / Winter Belt
+ORD,Chicago O'Hare International Airport,large_airport,672.0,11,41.9786,-87.9048,US-IL,Chicago,Northern Continental / Winter Belt
+DAY,James M Cox Dayton International Airport,medium_airport,1009.0,3,39.902401,-84.219398,US-OH,Dayton,Southern / Subtropical
+MFR,Rogue Valley International Medford Airport,medium_airport,1335.0,2,42.3741989135742,-122.873001098632,US-OR,Medford,Northern Continental / Winter Belt
+BTV,Burlington International Airport,medium_airport,335.0,2,44.471901,-73.153297,US-VT,South Burlington,Northern Continental / Winter Belt
+TLH,Tallahassee Regional Airport,medium_airport,81.0,2,30.3965,-84.350304,US-FL,Tallahassee,Southern / Subtropical
+TYS,McGhee Tyson Airport,medium_airport,981.0,2,35.811001,-83.994003,US-TN,Alcoa,Southern / Subtropical
+DFW,Dallas Fort Worth International Airport,large_airport,607.0,7,32.896801,-97.038002,US-TX,Dallas-Fort Worth,Southern / Subtropical
+FLL,Fort Lauderdale Hollywood International Airport,large_airport,9.0,3,26.072599,-80.152702,US-FL,Fort Lauderdale,Southern / Subtropical
+AUS,Austin Bergstrom International Airport,large_airport,542.0,2,30.197535,-97.662015,US-TX,Austin,Southern / Subtropical
+CHA,Chattanooga Metropolitan Airport (Lovell Field),medium_airport,683.0,2,35.035301,-85.203796,US-TN,Chattanooga,Southern / Subtropical
+CMH,John Glenn Columbus International Airport,large_airport,815.0,2,39.998001,-82.891899,US-OH,Columbus,Southern / Subtropical
+LRD,Laredo International Airport,medium_airport,508.0,3,27.5438003540039,-99.4616012573242,US-TX,Laredo,Southern / Subtropical
+BRO,Brownsville South Padre Island International Airport,medium_airport,22.0,3,25.9067993164062,-97.4259033203125,US-TX,Brownsville,Southern / Subtropical
+CRP,Corpus Christi International Airport,medium_airport,44.0,2,27.770399,-97.501198,US-TX,Corpus Christi,Southern / Subtropical
+LAN,Capital City Airport,medium_airport,861.0,3,42.7787017822265,-84.58740234375,US-MI,Lansing,Northern Continental / Winter Belt
+PVD,Theodore Francis Green State Airport,large_airport,55.0,2,41.725038,-71.425668,US-RI,Providence,Northern Continental / Winter Belt
+FWA,Fort Wayne International Airport,medium_airport,814.0,3,40.9785,-85.195099,US-IN,Fort Wayne,Northern Continental / Winter Belt
+JFK,John F Kennedy International Airport,large_airport,13.0,4,40.639447,-73.779317,US-NY,New York,Northern Continental / Winter Belt
+LGA,La Guardia Airport,large_airport,21.0,3,40.777199,-73.872597,US-NY,New York,Northern Continental / Winter Belt
+OKC,Will Rogers World Airport,medium_airport,1295.0,4,35.393101,-97.6007,US-OK,Oklahoma City,Southern / Subtropical
+PIT,Pittsburgh International Airport,large_airport,1203.0,4,40.49150085,-80.23290253,US-PA,Pittsburgh,Northern Continental / Winter Belt
+PBI,Palm Beach International Airport,large_airport,19.0,3,26.6832008361816,-80.0955963134765,US-FL,West Palm Beach,Southern / Subtropical
+ORF,Norfolk International Airport,medium_airport,26.0,2,36.8946,-76.201202,US-VA,Norfolk,Southern / Subtropical
+DCA,Ronald Reagan Washington National Airport,large_airport,15.0,3,38.8521,-77.037697,US-DC,Washington,Southern / Subtropical
+AEX,Alexandria International Airport,medium_airport,89.0,2,31.3274,-92.549797,US-LA,Alexandria,Southern / Subtropical
+SYR,Syracuse Hancock International Airport,large_airport,421.0,3,43.1111984252929,-76.1063003540039,US-NY,Syracuse,Northern Continental / Winter Belt
+SHV,Shreveport Regional Airport,medium_airport,258.0,2,32.446602,-93.8256,US-LA,Shreveport,Southern / Subtropical
+VLD,Valdosta Regional Airport,medium_airport,203.0,3,30.7824993133544,-83.2767028808593,US-GA,Valdosta,Southern / Subtropical
+BDL,Bradley International Airport,medium_airport,173.0,3,41.93851,-72.688066,US-CT,Hartford,Northern Continental / Winter Belt
+FAT,Fresno Yosemite International Airport,medium_airport,336.0,2,36.776199,-119.718002,US-CA,Fresno,Southern / Subtropical
+BZN,Gallatin Field,medium_airport,4473.0,3,45.77750015,-111.1529999,US-MT,Bozeman,High Alpine / Mountain
+RDM,Roberts Field,medium_airport,3080.0,2,44.2541008,-121.1500015,US-OR,Redmond,High Alpine / Mountain
+LFT,Lafayette Regional Airport,medium_airport,42.0,3,30.205299,-91.987602,US-LA,Lafayette,Southern / Subtropical
+IPL,Imperial County Airport,medium_airport,-54.0,2,32.8342018126999,-115.57900238,US-CA,Imperial,Southern / Subtropical
+EAU,Chippewa Valley Regional Airport,medium_airport,913.0,2,44.8657989501953,-91.4842987060546,US-WI,Eau Claire,Northern Continental / Winter Belt
+ERI,Erie International Tom Ridge Field,medium_airport,732.0,2,42.083127,-80.173867,US-PA,Erie,Northern Continental / Winter Belt
+BUF,Buffalo Niagara International Airport,large_airport,728.0,2,42.94049835,-78.73220062,US-NY,Buffalo,Northern Continental / Winter Belt
+IAH,George Bush Intercontinental Houston Airport,large_airport,97.0,5,29.9843997955322,-95.3414001464843,US-TX,Houston,Southern / Subtropical
+MCI,Kansas City International Airport,large_airport,1026.0,3,39.2976,-94.713898,US-MO,Kansas City,Southern / Subtropical
+AGS,Augusta Regional At Bush Field,medium_airport,144.0,2,33.3699,-81.9645,US-GA,Augusta,Southern / Subtropical
+ABI,Abilene Regional Airport,medium_airport,1791.0,3,32.4113006592,-99.6819000244,US-TX,Abilene,Southern / Subtropical
+GRR,Gerald R. Ford International Airport,medium_airport,794.0,3,42.88079834,-85.52279663,US-MI,Grand Rapids,Northern Continental / Winter Belt
+LBB,Lubbock Preston Smith International Airport,medium_airport,3282.0,3,33.663601,-101.822998,US-TX,Lubbock,High Alpine / Mountain
+CLT,Charlotte Douglas International Airport,large_airport,748.0,4,35.2140007019043,-80.9430999755859,US-NC,Charlotte,Southern / Subtropical
+LEX,Blue Grass Airport,medium_airport,979.0,2,38.036499,-84.605904,US-KY,Lexington,Southern / Subtropical
+MBS,MBS International Airport,medium_airport,668.0,2,43.532902,-84.079597,US-MI,Saginaw,Northern Continental / Winter Belt
+MOD,Modesto City Co-Harry Sham Field,medium_airport,97.0,2,37.625801,-120.954002,US-CA,Modesto,Southern / Subtropical
+AMA,Rick Husband Amarillo International Airport,medium_airport,3607.0,2,35.219398,-101.706001,US-TX,Amarillo,High Alpine / Mountain
+SGF,Springfield Branson National Airport,medium_airport,1268.0,2,37.245701,-93.388603,US-MO,Springfield,Southern / Subtropical
+AZO,Kalamazoo Battle Creek International Airport,medium_airport,874.0,3,42.2349014282226,-85.5521011352539,US-MI,Kalamazoo,Northern Continental / Winter Belt
+ABE,Lehigh Valley International Airport,medium_airport,393.0,2,40.651773,-75.442797,US-PA,Allentown,Northern Continental / Winter Belt
+SWF,New York Stewart International Airport,medium_airport,491.0,2,41.504101,-74.104797,US-NY,Newburgh,Northern Continental / Winter Belt
+BGM,Greater Binghamton/Edwin A Link field,medium_airport,1636.0,2,42.20869827,-75.97979736,US-NY,Binghamton,Northern Continental / Winter Belt
+AVP,Wilkes Barre Scranton International Airport,medium_airport,962.0,2,41.3385009765999,-75.7233963013,US-PA,Wilkes-Barre/Scranton,Northern Continental / Winter Belt
+FNT,Bishop International Airport,medium_airport,782.0,2,42.9654006958007,-83.7435989379882,US-MI,Flint,Northern Continental / Winter Belt
+GSP,Greenville Spartanburg International Airport,medium_airport,964.0,1,34.895699,-82.218903,US-SC,Greer,Southern / Subtropical
+ATW,Appleton International Airport,small_airport,918.0,2,44.258099,-88.519096,US-WI,Appleton,Northern Continental / Winter Belt
+ITH,Ithaca Tompkins Regional Airport,medium_airport,1099.0,2,42.4910011291503,-76.4583969116211,US-NY,Ithaca,Northern Continental / Winter Belt
+TUL,Tulsa International Airport,large_airport,677.0,3,36.1983985900878,-95.8880996704101,US-OK,Tulsa,Southern / Subtropical
+COS,City of Colorado Springs Municipal Airport,medium_airport,6187.0,3,38.805801,-104.700996,US-CO,Colorado Springs,High Alpine / Mountain
+ELP,El Paso International Airport,medium_airport,3959.0,3,31.80719948,-106.3779984,US-TX,El Paso,High Alpine / Mountain
+ABQ,Albuquerque International Sunport,medium_airport,5355.0,4,35.040199,-106.609001,US-NM,Albuquerque,High Alpine / Mountain
+SMF,Sacramento International Airport,large_airport,27.0,2,38.6954002380371,-121.591003417968,US-CA,Sacramento,Southern / Subtropical
+STL,St Louis Lambert International Airport,large_airport,618.0,4,38.748697,-90.370003,US-MO,St Louis,Southern / Subtropical
+IAD,Washington Dulles International Airport,large_airport,312.0,4,38.9445,-77.455803,US-VA,"Washington, DC",Southern / Subtropical
+DTW,Detroit Metropolitan Wayne County Airport,large_airport,645.0,6,42.2123985290527,-83.353401184082,US-MI,Detroit,Northern Continental / Winter Belt
+RDU,Raleigh Durham International Airport,large_airport,435.0,3,35.8776016235351,-78.7874984741211,US-NC,Raleigh/Durham,Southern / Subtropical
+RSW,Southwest Florida International Airport,large_airport,30.0,1,26.5361995697021,-81.7552032470703,US-FL,Fort Myers,Southern / Subtropical
+OAK,Metropolitan Oakland International Airport,large_airport,9.0,4,37.721298,-122.221001,US-CA,Oakland,Southern / Subtropical
+ROC,Frederick Douglass Greater Rochester International Airport,medium_airport,559.0,3,43.1189,-77.672401,US-NY,Rochester,Northern Continental / Winter Belt
+IND,Indianapolis International Airport,large_airport,797.0,3,39.7173,-86.294403,US-IN,Indianapolis,Southern / Subtropical
+CVG,Cincinnati Northern Kentucky International Airport,large_airport,896.0,4,39.048801,-84.667801,US-KY,Cincinnati / Covington,Southern / Subtropical
+MDW,Chicago Midway International Airport,large_airport,620.0,5,41.785999,-87.752403,US-IL,Chicago,Northern Continental / Winter Belt
+SDF,Louisville Muhammad Ali International Airport,large_airport,501.0,3,38.1744,-85.736,US-KY,Louisville,Southern / Subtropical
+ABY,Southwest Georgia Regional Airport,medium_airport,197.0,2,31.532946,-84.196215,US-GA,Albany,Southern / Subtropical
+TRI,Tri-Cities Regional TN/VA Airport,medium_airport,1519.0,2,36.475201,-82.407401,US-TN,Blountville,Southern / Subtropical
+XNA,Northwest Arkansas Regional Airport,medium_airport,1287.0,2,36.281898,-94.306801,US-AR,Fayetteville/Springdale/Rogers,Southern / Subtropical
+ROA,Roanoke-Blacksburg Regional Airport,medium_airport,1175.0,2,37.3255,-79.975403,US-VA,Roanoke,Southern / Subtropical
+MLI,Quad City International Airport,medium_airport,590.0,3,41.448502,-90.5075,US-IL,Moline,Northern Continental / Winter Belt
+LYH,Lynchburg Regional Airport - Preston Glenn Field,medium_airport,938.0,2,37.326698,-79.200401,US-VA,Lynchburg,Southern / Subtropical
+EVV,Evansville Regional Airport,medium_airport,418.0,3,38.0369987488,-87.5324020386,US-IN,Evansville,Southern / Subtropical
+HPN,Westchester County Airport,medium_airport,439.0,2,41.0670013427734,-73.7076034545898,US-NY,White Plains,Northern Continental / Winter Belt
+FAY,Fayetteville Regional Airport - Grannis Field,medium_airport,189.0,2,34.991199,-78.880302,US-NC,Fayetteville,Southern / Subtropical
+EWN,Coastal Carolina Regional Airport,medium_airport,18.0,2,35.0730018616,-77.0429000853999,US-NC,New Bern,Southern / Subtropical
+CSG,Columbus Metropolitan Airport,medium_airport,397.0,2,32.516300201416,-84.9389038085937,US-GA,Columbus,Southern / Subtropical
+GPT,Gulfport Biloxi International Airport,medium_airport,28.0,3,30.407301,-89.070099,US-MS,Gulfport,Southern / Subtropical
+MLU,Monroe Regional Airport,medium_airport,79.0,3,32.510899,-92.037697,US-LA,Monroe,Southern / Subtropical
+MOB,Mobile Regional Airport,medium_airport,219.0,2,30.6912,-88.242798,US-AL,Mobile,Southern / Subtropical
+OAJ,Albert J Ellis Airport,medium_airport,94.0,1,34.829201,-77.612099,US-NC,Richlands,Southern / Subtropical
+CHO,Charlottesville Albemarle Airport,medium_airport,639.0,1,38.1385993957519,-78.4529037475586,US-VA,Charlottesville,Southern / Subtropical
+ILM,Wilmington International Airport,medium_airport,32.0,2,34.2705993652343,-77.902603149414,US-NC,Wilmington,Southern / Subtropical
+BMI,Central Illinois Regional Airport at Bloomington-Normal,medium_airport,871.0,3,40.4771,-88.915901,US-IL,Bloomington/Normal,Northern Continental / Winter Belt
+JAN,Jackson-Medgar Wiley Evers International Airport,medium_airport,346.0,2,32.311199,-90.075897,US-MS,Jackson,Southern / Subtropical
+CID,The Eastern Iowa Airport,medium_airport,869.0,2,41.884701,-91.7108,US-IA,Cedar Rapids,Northern Continental / Winter Belt
+GRK,Killeen-Fort Hood Regional Airport / Robert Gray Army Air Field,medium_airport,1015.0,1,31.0672,-97.828903,US-TX,Killeen,Southern / Subtropical
+HOU,William P Hobby Airport,medium_airport,46.0,4,29.645399,-95.2789,US-TX,Houston,Southern / Subtropical
+CRW,Yeager Airport,medium_airport,981.0,2,38.3731,-81.593201,US-WV,Charleston,Southern / Subtropical
+HTS,Tri-State/Milton J. Ferguson Field,medium_airport,828.0,2,38.366699,-82.557999,US-WV,Huntington,Southern / Subtropical
+PSC,Tri Cities Airport,medium_airport,410.0,3,46.2647018432617,-119.119003295898,US-WA,Pasco,Northern Continental / Winter Belt
+BOI,Boise Air Terminal/Gowen Field,medium_airport,2871.0,3,43.5644,-116.223,US-ID,Boise,High Alpine / Mountain
+SBP,San Luis County Regional Airport,medium_airport,212.0,2,35.2368011474999,-120.641998291,US-CA,San Luis Obispo,Southern / Subtropical
+CLD,McClellan-Palomar Airport,medium_airport,331.0,1,33.1283,-117.279999,US-CA,Carlsbad,Southern / Subtropical
+PSP,Palm Springs International Airport,medium_airport,477.0,2,33.8297,-116.507004,US-CA,Palm Springs,Southern / Subtropical
+SBA,Santa Barbara Municipal Airport,medium_airport,13.0,3,34.42620087,-119.8399963,US-CA,Santa Barbara,Southern / Subtropical
+MEM,Memphis International Airport,large_airport,341.0,4,35.0424003601074,-89.9766998291015,US-TN,Memphis,Southern / Subtropical
+MRY,Monterey Peninsula Airport,medium_airport,257.0,2,36.5870018005371,-121.843002319335,US-CA,Monterey,Southern / Subtropical
+GEG,Spokane International Airport,medium_airport,2376.0,2,47.6199,-117.533997,US-WA,Spokane,High Alpine / Mountain
+RDD,Redding Municipal Airport,medium_airport,505.0,2,40.50899887,-122.2929993,US-CA,Redding,Northern Continental / Winter Belt
+PAH,Barkley Regional Airport,medium_airport,410.0,2,37.0607986450195,-88.7738037109375,US-KY,Paducah,Southern / Subtropical
+CMX,Houghton County Memorial Airport,medium_airport,1095.0,2,47.168399810791,-88.4890975952148,US-MI,Hancock,Northern Continental / Winter Belt
+SPI,Abraham Lincoln Capital Airport,medium_airport,598.0,3,39.844101,-89.677902,US-IL,Springfield,Southern / Subtropical
+EUG,Mahlon Sweet Field,medium_airport,374.0,3,44.1245994567871,-123.211997985839,US-OR,Eugene,Northern Continental / Winter Belt
+CIC,Chico Municipal Airport,small_airport,240.0,2,39.79539871,-121.8580017,US-CA,Chico,Southern / Subtropical
+PIH,Pocatello Regional Airport,medium_airport,4452.0,2,42.9098014831543,-112.596000671386,US-ID,Pocatello,High Alpine / Mountain
+SGU,St George Regional Airport,medium_airport,2941.0,1,37.036389,-113.510306,US-UT,St George,High Alpine / Mountain
+COD,Yellowstone Regional Airport,medium_airport,5102.0,1,44.520198822,-109.024002075,US-WY,Cody,High Alpine / Mountain
+MIA,Miami International Airport,large_airport,8.0,4,25.7931995391845,-80.2906036376953,US-FL,Miami,Southern / Subtropical
+MHT,Manchester-Boston Regional Airport,medium_airport,266.0,2,42.932598,-71.435699,US-NH,Manchester,Northern Continental / Winter Belt
+GRB,Austin Straubel International Airport,medium_airport,695.0,3,44.483459,-88.130805,US-WI,Green Bay,Northern Continental / Winter Belt
+FSD,Sioux Falls Regional Airport / Joe Foss Field,medium_airport,1429.0,3,43.585463,-96.741152,US-SD,Sioux Falls,Northern Continental / Winter Belt
+SJU,Luis Munoz Marin International Airport,large_airport,9.0,2,18.4393997192,-66.0018005371,PR-U-A,San Juan,Southern / Subtropical
+AVL,Asheville Regional Airport,medium_airport,2165.0,1,35.436199,-82.541801,US-NC,Asheville,High Alpine / Mountain
+BFL,Meadows Field,medium_airport,510.0,2,35.433601,-119.056999,US-CA,Bakersfield,Southern / Subtropical
+RAP,Rapid City Regional Airport,medium_airport,3204.0,2,44.0452995300293,-103.056999206542,US-SD,Rapid City,High Alpine / Mountain
+DRO,Durango La Plata County Airport,small_airport,6685.0,1,37.1515007019,-107.753997803,US-CO,Durango,High Alpine / Mountain
+PIA,General Wayne A. Downing Peoria International Airport,medium_airport,660.0,2,40.6642,-89.693298,US-IL,Peoria,Northern Continental / Winter Belt
+OGG,Kahului Airport,medium_airport,54.0,2,20.898543,-156.431212,US-HI,Kahului,Tropical / Island
+SIT,Sitka Rocky Gutierrez Airport,medium_airport,21.0,1,57.0471000671386,-135.361999511718,US-AK,Sitka,Northern Continental / Winter Belt
+TXK,Texarkana Regional Airport (Webb Field),medium_airport,390.0,2,33.453701,-93.990997,US-AR,Texarkana,Southern / Subtropical
+RNO,Reno Tahoe International Airport,large_airport,4415.0,3,39.4990997314453,-119.767997741699,US-NV,Reno,High Alpine / Mountain
+DAL,Dallas Love Field,medium_airport,487.0,3,32.847099,-96.851799,US-TX,Dallas,Southern / Subtropical
+SCE,University Park Airport,medium_airport,1239.0,1,40.849374,-77.84852,US-PA,State College,Northern Continental / Winter Belt
+MEI,Key Field / Meridian Regional Airport,medium_airport,297.0,2,32.3326,-88.7519,US-MS,Meridian,Southern / Subtropical
+MDT,Harrisburg International Airport,medium_airport,310.0,1,40.1935005188,-76.7633972168,US-PA,Harrisburg,Northern Continental / Winter Belt
+FCA,Glacier Park International Airport,medium_airport,2977.0,3,48.3105010986328,-114.255996704101,US-MT,Kalispell,High Alpine / Mountain
+SJC,Norman Y. Mineta San Jose International Airport,large_airport,62.0,3,37.362452,-121.929188,US-CA,San Jose,Southern / Subtropical
+KOA,Ellison Onizuka Kona International Airport at Keahole,medium_airport,47.0,1,19.738783,-156.045603,US-HI,Kailua-Kona,Tropical / Island
+PLN,Pellston Regional Airport of Emmet County Airport,medium_airport,721.0,2,45.57089996,-84.79669952,US-MI,Pellston,Northern Continental / Winter Belt
+PHF,Newport News Williamsburg International Airport,medium_airport,42.0,2,37.131901,-76.492996,US-VA,Newport News,Southern / Subtropical
+SAN,San Diego International Airport,large_airport,17.0,1,32.7336006165,-117.190002441,US-CA,San Diego,Southern / Subtropical
+GNV,Gainesville Regional Airport,medium_airport,152.0,2,29.6900997162,-82.2717971802,US-FL,Gainesville,Southern / Subtropical
+HLN,Helena Regional Airport,medium_airport,3877.0,3,46.6068,-111.983002,US-MT,Helena,High Alpine / Mountain
+GJT,Grand Junction Regional Airport,medium_airport,4858.0,2,39.126663,-108.529387,US-CO,Grand Junction,High Alpine / Mountain
+CPR,Casper-Natrona County International Airport,medium_airport,5350.0,4,42.908001,-106.463997,US-WY,Casper,High Alpine / Mountain
+FSM,Fort Smith Regional Airport,medium_airport,469.0,2,35.336601,-94.367401,US-AR,Fort Smith,Southern / Subtropical
+CMI,University of Illinois Willard Airport,medium_airport,755.0,4,40.039819,-88.276249,US-IL,Savoy,Northern Continental / Winter Belt
+GTF,Great Falls International Airport,medium_airport,3680.0,3,47.48199844,-111.3710022,US-MT,Great Falls,High Alpine / Mountain
+HDN,Yampa Valley Airport,small_airport,6606.0,1,40.48120117,-107.2180023,US-CO,Hayden,High Alpine / Mountain
+ITO,Hilo International Airport,medium_airport,38.0,2,19.721399,-155.048004,US-HI,Hilo,Tropical / Island
+MTJ,Montrose Regional Airport,medium_airport,5759.0,2,38.5097999573,-107.893997192,US-CO,Montrose,High Alpine / Mountain
+HSV,Huntsville International Carl T Jones Field,medium_airport,629.0,2,34.637199,-86.775101,US-AL,Huntsville,Southern / Subtropical
+BTM,Bert Mooney Airport,medium_airport,5550.0,3,45.9547996520996,-112.497001647949,US-MT,Butte,High Alpine / Mountain
+BIL,Billings Logan International Airport,medium_airport,3652.0,3,45.807701,-108.542999,US-MT,Billings,High Alpine / Mountain
+COU,Columbia Regional Airport,medium_airport,889.0,2,38.8181,-92.219597,US-MO,Columbia,Southern / Subtropical
+MSO,Missoula International Airport,medium_airport,3206.0,2,46.91630173,-114.0910034,US-MT,Missoula,High Alpine / Mountain
+SMX,Santa Maria Public Airport Captain G Allan Hancock Field,medium_airport,261.0,2,34.898899,-120.457001,US-CA,Santa Maria,Southern / Subtropical
+TWF,Joslin Field Magic Valley Regional Airport,medium_airport,4154.0,2,42.4818,-114.487999,US-ID,Twin Falls,High Alpine / Mountain
+ISP,Long Island Mac Arthur Airport,medium_airport,99.0,4,40.79520035,-73.10019684,US-NY,Islip,Northern Continental / Winter Belt
+GCC,Northeast Wyoming Regional Airport,medium_airport,4365.0,2,44.3489,-105.539001,US-WY,Gillette,High Alpine / Mountain
+LIH,Lihue Airport,medium_airport,153.0,2,21.976,-159.339005,US-HI,Lihue,Tropical / Island
+LNK,Lincoln Airport,medium_airport,1219.0,3,40.8510017395019,-96.7592010498046,US-NE,Lincoln,Northern Continental / Winter Belt
+DAB,Daytona Beach International Airport,medium_airport,34.0,3,29.179899,-81.058098,US-FL,Daytona Beach,Southern / Subtropical
+SNA,John Wayne Airport-Orange County Airport,large_airport,56.0,2,33.675701,-117.867996,US-CA,Santa Ana,Southern / Subtropical
+MQT,Sawyer International Airport,medium_airport,1221.0,1,46.3536,-87.395401,US-MI,Gwinn,Northern Continental / Winter Belt
+LGB,Long Beach Airport (Daugherty Field),medium_airport,60.0,5,33.816523,-118.149891,US-CA,Long Beach,Southern / Subtropical
+CWA,Central Wisconsin Airport,medium_airport,1277.0,2,44.7775993347,-89.6668014526,US-WI,Mosinee,Northern Continental / Winter Belt
+LSE,La Crosse Regional Airport,medium_airport,655.0,3,43.879002,-91.256699,US-WI,La Crosse,Northern Continental / Winter Belt
+BUR,Bob Hope Airport,medium_airport,778.0,2,34.197703,-118.356378,US-CA,Burbank,Southern / Subtropical
+ACT,Waco Regional Airport,medium_airport,516.0,2,31.6112995147705,-97.2304992675781,US-TX,Waco,Southern / Subtropical
+MHK,Manhattan Regional Airport,medium_airport,1057.0,2,39.140998840332,-96.6707992553711,US-KS,Manhattan,Southern / Subtropical
+MOT,Minot International Airport,medium_airport,1716.0,2,48.2593994140625,-101.279998779296,US-ND,Minot,Northern Continental / Winter Belt
+IDA,Idaho Falls Regional Airport,medium_airport,4744.0,2,43.514599,-112.070999,US-ID,Idaho Falls,High Alpine / Mountain
+SUN,Friedman Memorial Airport,medium_airport,5318.0,1,43.50439835,-114.2959976,US-ID,Hailey,High Alpine / Mountain
+GTR,Golden Triangle Regional Airport,medium_airport,264.0,1,33.4502983092999,-88.5914001465,US-MS,Columbus/W Point/Starkville,Southern / Subtropical
+MLB,Melbourne Orlando International Airport,medium_airport,33.0,3,28.1028,-80.645302,US-FL,Melbourne,Southern / Subtropical
+SRQ,Sarasota Bradenton International Airport,medium_airport,30.0,2,27.395399,-82.554398,US-FL,Sarasota/Bradenton,Southern / Subtropical
+JAC,Jackson Hole Airport,medium_airport,6451.0,1,43.6072998046875,-110.737998962402,US-WY,Jackson,High Alpine / Mountain
+ASE,Aspen-Pitkin Co/Sardy Field,medium_airport,7820.0,1,39.22320175,-106.8690033,US-CO,Aspen,High Alpine / Mountain
+LCH,Lake Charles Regional Airport,medium_airport,15.0,2,30.1261005401611,-93.2232971191406,US-LA,Lake Charles,Southern / Subtropical
+JNU,Juneau International Airport,medium_airport,21.0,2,58.3549995422363,-134.57600402832,US-AK,Juneau,Northern Continental / Winter Belt
+ROW,Roswell Air Center Airport,medium_airport,3671.0,3,33.301601,-104.530998,US-NM,Roswell,High Alpine / Mountain
+BQK,Brunswick Golden Isles Airport,medium_airport,26.0,1,31.2588005065917,-81.4664993286132,US-GA,Brunswick,Southern / Subtropical
+YUM,Yuma International Airport / Marine Corps Air Station Yuma,medium_airport,213.0,4,32.656601,-114.606003,US-AZ,Yuma,Southern / Subtropical
+FLG,Flagstaff Pulliam International Airport,medium_airport,7014.0,1,35.1385,-111.670998,US-AZ,Flagstaff,High Alpine / Mountain
+EGE,Eagle County Regional Airport,medium_airport,6548.0,2,39.64260101,-106.9179993,US-CO,Eagle,High Alpine / Mountain
+GUC,Gunnison Crested Butte Regional Airport,small_airport,7680.0,2,38.536346,-106.928306,US-CO,Gunnison,High Alpine / Mountain
+EYW,Key West International Airport,medium_airport,3.0,1,24.556101,-81.759598,US-FL,Key West,Southern / Subtropical
+RKS,Southwest Wyoming Regional Airport,medium_airport,6764.0,2,41.5942,-109.065001,US-WY,Rock Springs,High Alpine / Mountain
+BGR,Bangor International Airport,medium_airport,192.0,1,44.8074,-68.828102,US-ME,Bangor,Northern Continental / Winter Belt
+ELM,Elmira Corning Regional Airport,medium_airport,954.0,3,42.1599006652832,-76.8916015625,US-NY,Elmira/Corning,Northern Continental / Winter Belt
+ADQ,Kodiak Airport,medium_airport,78.0,3,57.75,-152.4940033,US-AK,Kodiak,Northern Continental / Winter Belt
+OTZ,Ralph Wien Memorial Airport,medium_airport,14.0,2,66.88469696,-162.598999,US-AK,Kotzebue,Northern Continental / Winter Belt
+OTH,Southwest Oregon Regional Airport,medium_airport,17.0,2,43.4170989990234,-124.246002197265,US-OR,North Bend,Northern Continental / Winter Belt
+STT,Cyril E. King Airport,medium_airport,23.0,1,18.337091,-64.977251,VI-U-A,Charlotte Amalie,Southern / Subtropical
+KTN,Ketchikan International Airport,medium_airport,89.0,2,55.35559845,-131.7140045,US-AK,Ketchikan,Northern Continental / Winter Belt
+BET,Bethel Airport,medium_airport,126.0,3,60.77980042,-161.8379974,US-AK,Bethel,Northern Continental / Winter Belt
+SJT,San Angelo Regional Mathis Field,medium_airport,1919.0,3,31.3577003479003,-100.496002197265,US-TX,San Angelo,Southern / Subtropical
+CDC,Cedar City Regional Airport,medium_airport,5622.0,2,37.701000213623,-113.098999023437,US-UT,Cedar City,High Alpine / Mountain
+CEC,Jack Mc Namara Field Airport,medium_airport,61.0,2,41.78020096,-124.2369995,US-CA,Crescent City,Northern Continental / Winter Belt
+SPS,Sheppard Air Force Base / Wichita Falls Municipal Airport,medium_airport,1019.0,4,33.9888,-98.491898,US-TX,Wichita Falls,Southern / Subtropical
+SCC,Deadhorse Airport,medium_airport,65.0,1,70.19470215,-148.4649963,US-AK,Deadhorse,Northern Continental / Winter Belt
+STX,Henry E Rohlsen Airport,medium_airport,74.0,1,17.7019004821777,-64.798599243164,VI-U-A,Christiansted,Southern / Subtropical
+OME,Nome Airport,medium_airport,37.0,2,64.5121994018554,-165.445007324218,US-AK,Nome,Northern Continental / Winter Belt
+MKG,Muskegon County Airport,medium_airport,629.0,2,43.169498,-86.238197,US-MI,Muskegon,Northern Continental / Winter Belt
+WRG,Wrangell Airport,medium_airport,49.0,1,56.48429871,-132.3699951,US-AK,Wrangell,Northern Continental / Winter Belt
+TYR,Tyler Pounds Regional Airport,medium_airport,544.0,3,32.3540992736816,-95.4023971557617,US-TX,Tyler,Southern / Subtropical
+BRW,Wiley Post Will Rogers Memorial Airport,medium_airport,44.0,1,71.285402,-156.766008,US-AK,Utqiaƒ°vik,Northern Continental / Winter Belt
+GGG,East Texas Regional Airport,medium_airport,365.0,2,32.3839988708496,-94.7115020751953,US-TX,Longview,Southern / Subtropical
+PSG,Petersburg James A Johnson Airport,medium_airport,111.0,1,56.80170059,-132.9450073,US-AK,Petersburg,Northern Continental / Winter Belt
+YAK,Yakutat Airport,medium_airport,33.0,2,59.508717,-139.660435,US-AK,Yakutat,Northern Continental / Winter Belt
+CLL,Easterwood Field,medium_airport,320.0,3,30.58860016,-96.36380005,US-TX,College Station,Southern / Subtropical
+SAF,Santa Fe Municipal Airport,medium_airport,6348.0,3,35.617099762,-106.088996887,US-NM,Santa Fe,High Alpine / Mountain
+CYS,Cheyenne Regional Jerry Olson Field,medium_airport,6159.0,2,41.155701,-104.811997,US-WY,Cheyenne,High Alpine / Mountain
+LWB,Greenbrier Valley Airport,medium_airport,2302.0,1,37.8582992554,-80.3994979858,US-WV,Lewisburg,High Alpine / Mountain
+CDV,Merle K (Mudhole) Smith Airport,medium_airport,54.0,2,60.491798,-145.477997,US-AK,Cordova,Northern Continental / Winter Belt
+FLO,Florence Regional Airport,medium_airport,146.0,2,34.1853981018066,-79.7238998413086,US-SC,Florence,Southern / Subtropical
+BLI,Bellingham International Airport,medium_airport,170.0,1,48.7928009033203,-122.53800201416,US-WA,Bellingham,Northern Continental / Winter Belt
+DBQ,Dubuque Regional Airport,medium_airport,1077.0,2,42.402,-90.709503,US-IA,Dubuque,Northern Continental / Winter Belt
+TOL,Eugene F. Kranz Toledo Express Airport,medium_airport,683.0,2,41.5868,-83.8078,US-OH,Toledo,Northern Continental / Winter Belt
+PIE,St. Petersburg Clearwater International Airport,medium_airport,11.0,5,27.9102,-82.687401,US-FL,Pinellas Park,Southern / Subtropical
+ADK,Adak Airport,medium_airport,18.0,2,51.883564,-176.642783,US-AK,Adak,Northern Continental / Winter Belt
+BKG,Branson Airport,small_airport,1302.0,1,36.532082,-93.200544,US-MO,Branson,Southern / Subtropical
+ABR,Aberdeen Regional Airport,medium_airport,1302.0,2,45.4491004943847,-98.4217987060546,US-SD,Aberdeen,Northern Continental / Winter Belt
+TEX,Telluride Regional Airport,small_airport,9070.0,1,37.9538002,-107.9079971,US-CO,Telluride,High Alpine / Mountain
+MMH,Mammoth Yosemite Airport,small_airport,7135.0,1,37.62409973,-118.8379974,US-CA,Mammoth Lakes,High Alpine / Mountain
+GUM,Antonio B. Won Pat International Airport,large_airport,298.0,2,13.4834,144.796005,GU-U-A,Hag√•t√±a,Southern / Subtropical

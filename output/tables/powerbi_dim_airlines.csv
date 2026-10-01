@@ -1,0 +1,18 @@
+﻿Airline,carrier_name,operating_model
+CO,Continental Airlines,Mainline Global Hub-and-Spoke
+US,US Airways,Mainline Hub-and-Spoke
+AA,American Airlines,Mainline Global Hub-and-Spoke
+AS,Alaska Airlines,Mainline Hub-and-Spoke
+DL,Delta Air Lines,Mainline Global Hub-and-Spoke
+B6,JetBlue Airways,Low-Cost Focus Cities
+HA,Hawaiian Airlines,Island Network Shuttle
+OO,SkyWest Airlines,Regional Hub Feeder
+9E,Endeavor Air,Regional Hub Feeder
+OH,PSA Airlines,Regional Hub Feeder
+EV,ExpressJet (Atlantic Southeast),Regional Hub Feeder
+XE,ExpressJet (Continental Express),Regional Hub Feeder
+YV,Mesa Airlines,Regional Hub Feeder
+UA,United Airlines,Mainline Global Hub-and-Spoke
+MQ,Envoy Air (American Eagle),Regional Hub Feeder
+F9,Frontier Airlines,Ultra Low-Cost Point-to-Point
+WN,Southwest Airlines,Low-Cost Point-to-Point

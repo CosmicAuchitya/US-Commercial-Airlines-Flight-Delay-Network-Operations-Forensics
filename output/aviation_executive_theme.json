@@ -1,0 +1,85 @@
+{
+  "name": "Aviation Executive Intelligence",
+  "dataColors": [
+    "#1E3A8A",
+    "#2563EB",
+    "#0D9488",
+    "#D97706",
+    "#DC2626",
+    "#7C3AED",
+    "#059669",
+    "#475569",
+    "#64748B",
+    "#94A3B8"
+  ],
+  "background": "#F8FAFC",
+  "foreground": "#0F172A",
+  "tableAccent": "#2563EB",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "outspacePane": [
+          {
+            "backgroundColor": { "solid": { "color": "#F8FAFC" } }
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#E2E8F0" } },
+            "radius": 8
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#CBD5E1" } },
+            "position": "Outer",
+            "preset": "BottomRight"
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": true,
+            "foreground": { "solid": { "color": "#475569" } }
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontColor": { "solid": { "color": "#0F172A" } },
+            "fontFamily": "Segoe UI Semibold",
+            "fontSize": 11
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [
+          {
+            "color": { "solid": { "color": "#1E3A8A" } },
+            "fontSize": 20,
+            "fontFamily": "Segoe UI",
+            "bold": true
+          }
+        ],
+        "categoryLabels": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#64748B" } },
+            "fontSize": 9,
+            "fontFamily": "Segoe UI"
+          }
+        ]
+      }
+    }
+  }
+}
